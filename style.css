@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Se necesita para que los pseudo-elementos funcionen */
+}
+body::before {
+    content: "";
+    background-image: url('imagenes/logo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Opacidad del 50% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;;
+}
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+#logo {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+}
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
